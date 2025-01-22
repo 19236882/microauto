@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Erreur</title>
+</head>
+<body>
+    <h1>Erreur interne</h1>
+    <p th:if="${error != null}">
+        Message d'erreur : <span th:text="${error.message}">Erreur inconnue</span>
+    </p>
+    <p th:if="${error == null}">
+        Une erreur est survenue. Veuillez réessayer plus tard.
+    </p>
+</body>
+</html>
