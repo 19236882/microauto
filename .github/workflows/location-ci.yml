@@ -42,7 +42,7 @@ jobs:
         working-directory: ./gestionlocation
         run: mvn test
 
-  # 📊 Étape 2 : Analyse de Qualité avec SonarQube
+  # 📊 Étape 2 : Analyse de Qualité avec SonarCloud
   quality:
     needs: build
     runs-on: ubuntu-latest
@@ -78,7 +78,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar \
-            -Dsonar.organization=microauto_microservices  # organisation réelle SonarQube
+            -Dsonar.organization=microauto_microservices \
             -Dsonar.projectKey=location-microservice \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
