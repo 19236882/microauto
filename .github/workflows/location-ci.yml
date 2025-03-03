@@ -80,7 +80,7 @@ jobs:
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar \
             -Dsonar.organization=microauto \  # Organisation clé 'microauto'
             -Dsonar.projectKey=microauto \  # Projet clé 'microauto'
-            -Dsonar.host.url=https://sonarcloud.io \
+            -Dsonar.host.url=https://sonarcloud.io \  # URL SonarCloud
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
   # 🐳 Étape 3 : Build et Push Docker
