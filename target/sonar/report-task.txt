@@ -1,7 +1,0 @@
-organization=microauto19236882
-projectKey=microauto
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.60249
-dashboardUrl=https://sonarcloud.io/dashboard?id=microauto
-ceTaskId=AZVl6c2I5Xtup6GOZ6f5
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZVl6c2I5Xtup6GOZ6f5

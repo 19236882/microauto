@@ -1,77 +1,0 @@
-
-1.0	microautoJavaFrontend"1741171572630*java2.B“
-T
-Osrc/main/java/com/parkauto/gestionlocations/repository/ILocationRepository.java2
-
-package4
--
-(com.parkauto.gestionlocations.repository5
-A
-<com.parkauto.gestionlocations.repository.ILocationRepository7
-
-	interface8
-
-access9
-
-public10
-
-simple name11
-
-ILocationRepository12
-;
-5org.springframework.data.jpa.repository.JpaRepository14
-
-unknown15
-
-
-implements16
-/
-)org.springframework.stereotype.Repository18
-
-annotated by19
-
-
-uses20
-3
--com.parkauto.gestionlocations.entity.Location22J
-
-1
-12Z
-
-3	
-354jw
-9
-64
-678 *
-1 (%:3B
-	
-9
-10
-
-
-11
-12
-
-17
-171815
-
-13
-131415
-
-21
-212215r‚
-
-61316*
-1. (;
-
-61719*
-1 (
-
-61720*
-1 (
-
-61320*
-1. (;
-
-62120*
-1< (D

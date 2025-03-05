@@ -1,9 +1,0 @@
-com/parkauto/gestionlocations/entity/Location.class
-com/parkauto/gestionlocations/controller/LocationController.class
-com/parkauto/gestionlocations/repository/ILocationRepository.class
-com/parkauto/gestionlocations/dto/VehiculeDTO.class
-com/parkauto/gestionlocations/services/LocationService.class
-com/parkauto/gestionlocations/dto/VehiculeFeignClient.class
-com/parkauto/gestionlocations/dto/ClientFeignClient.class
-com/parkauto/gestionlocations/dto/ClientDTO.class
-com/parkauto/gestionlocations/GestionlocationsApplication.class

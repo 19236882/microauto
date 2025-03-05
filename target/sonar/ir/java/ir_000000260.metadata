@@ -1,5 +1,0 @@
-com.parkauto.gestionlocations.services.LocationService#getAllLocations()Ljava/util/List;
-false
-6fbb2efc559cb258c5355bc8cac0018f
-==
-findAll org.springframework.data.repository.ListCrudRepository#findAll()Ljava/util/List;

@@ -1,6 +1,0 @@
-com.parkauto.gestionlocations.controller.LocationController#createLocation(Lcom/parkauto/gestionlocations/entity/Location;)Lorg/springframework/http/ResponseEntity;
-false
-e936180018c6593edeeffb4c88a985ae
-org.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
-==
-saveLocation com.parkauto.gestionlocations.services.LocationService#saveLocation(Lcom/parkauto/gestionlocations/entity/Location;)Lcom/parkauto/gestionlocations/entity/Location;
