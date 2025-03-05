@@ -1,0 +1,483 @@
+
+1.0	microautoJavaFrontend"1741171572365*java2.B‰
+C
+>src/main/java/com/parkauto/gestionlocations/dto/ClientDTO.java2
+
+package4
+&
+!com.parkauto.gestionlocations.dto5
+0
++com.parkauto.gestionlocations.dto.ClientDTO7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+	ClientDTO12
+:
+4com.parkauto.gestionlocations.dto.ClientDTO.idClient14
+
+field15
+
+private16
+
+idClient17
+5
+/com.parkauto.gestionlocations.dto.ClientDTO.nom19
+	
+nom20
+8
+2com.parkauto.gestionlocations.dto.ClientDTO.prenom22
+
+prenom23
+7
+1com.parkauto.gestionlocations.dto.ClientDTO.email25
+
+email26
+;
+5com.parkauto.gestionlocations.dto.ClientDTO.telephone28
+
+	telephone29
+9
+3com.parkauto.gestionlocations.dto.ClientDTO.adresse31
+
+adresse32
+;
+5com.parkauto.gestionlocations.dto.ClientDTO#<init>()V34
+
+method35
+
+calls36
+¦
+Ÿcom.parkauto.gestionlocations.dto.ClientDTO#<init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V38
+
+
+uses39
+
+
+references40
+O
+Icom.parkauto.gestionlocations.dto.ClientDTO#getIdClient()Ljava/lang/Long;42
+
+getIdClient43
+P
+Jcom.parkauto.gestionlocations.dto.ClientDTO#setIdClient(Ljava/lang/Long;)V45
+
+setIdClient46
+L
+Fcom.parkauto.gestionlocations.dto.ClientDTO#getNom()Ljava/lang/String;48
+
+getNom49
+M
+Gcom.parkauto.gestionlocations.dto.ClientDTO#setNom(Ljava/lang/String;)V51
+
+setNom52
+O
+Icom.parkauto.gestionlocations.dto.ClientDTO#getPrenom()Ljava/lang/String;54
+
+	getPrenom55
+P
+Jcom.parkauto.gestionlocations.dto.ClientDTO#setPrenom(Ljava/lang/String;)V57
+
+	setPrenom58
+N
+Hcom.parkauto.gestionlocations.dto.ClientDTO#getEmail()Ljava/lang/String;60
+
+getEmail61
+O
+Icom.parkauto.gestionlocations.dto.ClientDTO#setEmail(Ljava/lang/String;)V63
+
+setEmail64
+R
+Lcom.parkauto.gestionlocations.dto.ClientDTO#getTelephone()Ljava/lang/String;66
+
+getTelephone67
+S
+Mcom.parkauto.gestionlocations.dto.ClientDTO#setTelephone(Ljava/lang/String;)V69
+
+setTelephone70
+P
+Jcom.parkauto.gestionlocations.dto.ClientDTO#getAdresse()Ljava/lang/String;72
+
+
+getAdresse73
+Q
+Kcom.parkauto.gestionlocations.dto.ClientDTO#setAdresse(Ljava/lang/String;)V75
+
+
+setAdresse76J
+
+1
+12Z
+
+3	
+354jã
+
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+@
+30:
+303115 *
+1	 	(26:3B
+	
+9
+16
+
+
+11
+32
+@
+71:
+717235 *
+1@ @(26:3B
+	
+9
+10
+
+
+11
+73
+@
+62:
+626335 *
+15 5(26:3B
+	
+9
+10
+
+
+11
+64
+@
+50:
+505135 *
+1% %(26:3B
+	
+9
+10
+
+
+11
+52
+@
+24:
+242515 *
+1 (26:3B
+	
+9
+16
+
+
+11
+26
+@
+41:
+414235 *
+1 (26:3B
+	
+9
+10
+
+
+11
+43
+@
+44:
+444535 *
+1 (26:3B
+	
+9
+10
+
+
+11
+46
+@
+59:
+596035 *
+11 1(26:3B
+	
+9
+10
+
+
+11
+61
+@
+56:
+565735 *
+1- -(26:3B
+	
+9
+10
+
+
+11
+58
+@
+68:
+686935 *
+1= =(26:3B
+	
+9
+10
+
+
+11
+70
+@
+13:
+131415 *
+1 (26:3B
+	
+9
+16
+
+
+11
+17
+@
+18:
+181915 *
+1 (26:3B
+	
+9
+16
+
+
+11
+20
+@
+27:
+272815 *
+1 (26:3B
+	
+9
+16
+
+
+11
+29
+@
+47:
+474835 *
+1! !(26:3B
+	
+9
+10
+
+
+11
+49
+@
+65:
+656635 *
+19 9(26:3B
+	
+9
+10
+
+
+11
+67
+@
+21:
+212215 *
+1 (26:3B
+	
+9
+16
+
+
+11
+23
+@
+33:
+333435 *
+1 (26:3B
+	
+9
+10
+
+
+11
+12
+@
+53:
+535435 *
+1) )(26:3B
+	
+9
+10
+
+
+11
+55
+@
+74:
+747535 *
+1D D(26:3B
+	
+9
+10
+
+
+11
+76
+@
+37:
+373835 *
+1 (26:3B
+	
+9
+10
+
+
+11
+12rŠ	
+
+33636*
+1 (
+
+37636*
+1 (
+
+37639*
+1	 (
+
+37640*
+1	 (
+
+371340*
+1 (
+
+37639*
+1	 (
+
+37640*
+1	 (
+
+371840*
+1 (
+
+37639*
+1	 (
+
+37640*
+1	 (
+
+372140*
+1 (
+
+37639*
+1	 (
+
+37640*
+1	 (
+
+372440*
+1 (
+
+37639*
+1	 (
+
+37640*
+1	 (
+
+372740*
+1 (
+
+37639*
+1	 (
+
+37640*
+1	 (
+
+373040*
+1 (
+
+411340*
+1 (
+
+44639*
+1	 (
+
+44640*
+1	 (
+
+441340*
+1 (
+
+471840*
+1" "(
+
+50639*
+1&	 &(
+
+50640*
+1&	 &(
+
+501840*
+1& &(
+
+532140*
+1* *(
+
+56639*
+1.	 .(
+
+56640*
+1.	 .(
+
+562140*
+1. .(
+
+592440*
+12 2(
+
+62639*
+16	 6(
+
+62640*
+16	 6(
+
+622440*
+16 6(
+
+652740*
+1: :(
+
+68639*
+1>	 >(
+
+68640*
+1>	 >(
+
+682740*
+1> >(
+
+713040*
+1A A(
+
+74639*
+1E	 E(
+
+74640*
+1E	 E(
+
+743040*
+1E E(

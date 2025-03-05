@@ -1,0 +1,6 @@
+com.parkauto.gestionlocations.controller.LocationController#getAllLocations()Lorg/springframework/http/ResponseEntity;
+false
+8f7f317fd157c470b3971da95a3444ff
+org.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
+==
+getAllLocations com.parkauto.gestionlocations.services.LocationService#getAllLocations()Ljava/util/List;

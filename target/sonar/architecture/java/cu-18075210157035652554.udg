@@ -1,0 +1,115 @@
+
+1.0	microautoJavaFrontend"1741171571893*java2.B˜
+M
+Hsrc/main/java/com/parkauto/gestionlocations/dto/VehiculeFeignClient.java2
+
+package4
+&
+!com.parkauto.gestionlocations.dto5
+:
+5com.parkauto.gestionlocations.dto.VehiculeFeignClient7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+
+VehiculeFeignClient12
+5
+/org.springframework.cloud.openfeign.FeignClient14
+
+unknown15
+
+annotated by16
+
+
+uses17
+‡
+€com.parkauto.gestionlocations.dto.VehiculeFeignClient#getVehiculeById(Ljava/lang/Long;)Lorg/springframework/http/ResponseEntity;19
+
+method20
+
+getVehiculeById21
+-
+'org.springframework.http.ResponseEntity23
+
+returns24
+8
+2org.springframework.web.bind.annotation.GetMapping26
+3
+-com.parkauto.gestionlocations.dto.VehiculeDTO28
+:
+4org.springframework.web.bind.annotation.PathVariable30J
+
+1
+12Z
+
+3	
+354já
+
+29
+293015
+9
+64
+678 *
+1 (%:3B
+	
+9
+10
+
+
+11
+12
+
+27
+272815
+
+25
+252615
+
+22
+222315
+
+13
+131415
+@
+18:
+181920 *
+1 (26:3B
+	
+9
+10
+
+
+11
+21rñ
+
+61316*
+1 (
+
+61317*
+1 (
+
+182224*
+1	 	(
+
+182516*
+1 (
+
+182517*
+1 (
+
+182217*
+1	 	(
+
+182717*
+1	 	(
+
+182916*
+1	0 	(1
+
+182917*
+1	1 	(=

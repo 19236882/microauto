@@ -1,0 +1,355 @@
+
+1.0	microautoJavaFrontend"1741171572069*java2.B±
+E
+@src/main/java/com/parkauto/gestionlocations/dto/VehiculeDTO.java2
+
+package4
+&
+!com.parkauto.gestionlocations.dto5
+2
+-com.parkauto.gestionlocations.dto.VehiculeDTO7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+VehiculeDTO12
+>
+8com.parkauto.gestionlocations.dto.VehiculeDTO.idVehicule14
+
+field15
+
+private16
+
+
+idVehicule17
+>
+8com.parkauto.gestionlocations.dto.VehiculeDTO.anneeModel19
+
+
+anneeModel20
+8
+2com.parkauto.gestionlocations.dto.VehiculeDTO.prix22
+
+
+prix23
+A
+;com.parkauto.gestionlocations.dto.VehiculeDTO.imageVehicule25
+
+imageVehicule26
+=
+7com.parkauto.gestionlocations.dto.VehiculeDTO#<init>()V28
+
+method29
+
+calls30
+„
+~com.parkauto.gestionlocations.dto.VehiculeDTO#<init>(Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/Double;Ljava/lang/String;)V32
+
+
+uses33
+
+
+references34
+S
+Mcom.parkauto.gestionlocations.dto.VehiculeDTO#getIdVehicule()Ljava/lang/Long;36
+
+getIdVehicule37
+T
+Ncom.parkauto.gestionlocations.dto.VehiculeDTO#setIdVehicule(Ljava/lang/Long;)V39
+
+setIdVehicule40
+V
+Pcom.parkauto.gestionlocations.dto.VehiculeDTO#getAnneeModel()Ljava/lang/Integer;42
+
+getAnneeModel43
+W
+Qcom.parkauto.gestionlocations.dto.VehiculeDTO#setAnneeModel(Ljava/lang/Integer;)V45
+
+setAnneeModel46
+O
+Icom.parkauto.gestionlocations.dto.VehiculeDTO#getPrix()Ljava/lang/Double;48
+
+getPrix49
+P
+Jcom.parkauto.gestionlocations.dto.VehiculeDTO#setPrix(Ljava/lang/Double;)V51
+
+setPrix52
+X
+Rcom.parkauto.gestionlocations.dto.VehiculeDTO#getImageVehicule()Ljava/lang/String;54
+
+getImageVehicule55
+Y
+Scom.parkauto.gestionlocations.dto.VehiculeDTO#setImageVehicule(Ljava/lang/String;)V57
+
+setImageVehicule58J
+
+1
+12Z
+
+3	
+354j×
+@
+41:
+414229 *
+1 (26:3B
+	
+9
+10
+
+
+11
+43
+@
+18:
+181915 *
+1 (26:3B
+	
+9
+16
+
+
+11
+20
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+@
+27:
+272829 *
+1
+ 
+(26:3B
+	
+9
+10
+
+
+11
+12
+@
+21:
+212215 *
+1 (26:3B
+	
+9
+16
+
+
+11
+23
+@
+31:
+313229 *
+1 (26:3B
+	
+9
+10
+
+
+11
+12
+@
+47:
+474829 *
+1% %(26:3B
+	
+9
+10
+
+
+11
+49
+@
+44:
+444529 *
+1! !(26:3B
+	
+9
+10
+
+
+11
+46
+@
+24:
+242515 *
+1 (26:3B
+	
+9
+16
+
+
+11
+26
+@
+56:
+565729 *
+11 1(26:3B
+	
+9
+10
+
+
+11
+58
+@
+35:
+353629 *
+1 (26:3B
+	
+9
+10
+
+
+11
+37
+@
+38:
+383929 *
+1 (26:3B
+	
+9
+10
+
+
+11
+40
+@
+50:
+505129 *
+1) )(26:3B
+	
+9
+10
+
+
+11
+52
+@
+13:
+131415 *
+1 (26:3B
+	
+9
+16
+
+
+11
+17
+@
+53:
+535429 *
+1- -(26:3B
+	
+9
+10
+
+
+11
+55r˜
+
+27630*
+1
+ 
+(
+
+31630*
+1 (
+
+31633*
+1	 (
+
+31634*
+1	 (
+
+311334*
+1 (
+
+31633*
+1	 (
+
+31634*
+1	 (
+
+311834*
+1 (
+
+31633*
+1	 (
+
+31634*
+1	 (
+
+312134*
+1 (
+
+31633*
+1	 (
+
+31634*
+1	 (
+
+312434*
+1 (
+
+351334*
+1 (
+
+38633*
+1	 (
+
+38634*
+1	 (
+
+381334*
+1 (
+
+411834*
+1 (
+
+44633*
+1"	 "(
+
+44634*
+1"	 "(
+
+441834*
+1" "(
+
+472134*
+1& &(
+
+50633*
+1*	 *(
+
+50634*
+1*	 *(
+
+502134*
+1* *(
+
+532434*
+1. .(
+
+56633*
+12	 2(
+
+56634*
+12	 2(
+
+562434*
+12 2(

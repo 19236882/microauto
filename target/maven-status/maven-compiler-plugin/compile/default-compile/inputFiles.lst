@@ -1,0 +1,9 @@
+/home/ibahaddou/microservice/microauto/gestionlocation/src/main/java/com/parkauto/gestionlocations/dto/ClientFeignClient.java
+/home/ibahaddou/microservice/microauto/gestionlocation/src/main/java/com/parkauto/gestionlocations/entity/Location.java
+/home/ibahaddou/microservice/microauto/gestionlocation/src/main/java/com/parkauto/gestionlocations/dto/VehiculeDTO.java
+/home/ibahaddou/microservice/microauto/gestionlocation/src/main/java/com/parkauto/gestionlocations/dto/VehiculeFeignClient.java
+/home/ibahaddou/microservice/microauto/gestionlocation/src/main/java/com/parkauto/gestionlocations/repository/ILocationRepository.java
+/home/ibahaddou/microservice/microauto/gestionlocation/src/main/java/com/parkauto/gestionlocations/dto/ClientDTO.java
+/home/ibahaddou/microservice/microauto/gestionlocation/src/main/java/com/parkauto/gestionlocations/GestionlocationsApplication.java
+/home/ibahaddou/microservice/microauto/gestionlocation/src/main/java/com/parkauto/gestionlocations/services/LocationService.java
+/home/ibahaddou/microservice/microauto/gestionlocation/src/main/java/com/parkauto/gestionlocations/controller/LocationController.java
