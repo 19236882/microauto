@@ -29,7 +29,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build with Maven
-        working-directory: ./gestionlocation
         run: mvn clean install
 
   sonarqube:
@@ -65,7 +64,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        working-directory: ./gestionlocation
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
               -Dsonar.projectKey=microauto \
               -Dsonar.organization=microauto19236882 \
@@ -85,7 +83,6 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        working-directory: ./gestionlocation
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/location-image:latest .
 
       - name: Push Docker image to Docker Hub
