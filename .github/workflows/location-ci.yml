@@ -68,6 +68,7 @@ jobs:
               -Dsonar.projectKey=microauto \
               -Dsonar.organization=microauto19236882 \
               -Dsonar.host.url=https://sonarcloud.io
+
   docker:
     needs: sonarqube
     runs-on: self-hosted
@@ -86,3 +87,21 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/location-image:latest
+
+  test-alb:
+    needs: docker
+    runs-on: self-hosted
+    env:
+      # Remplace cette variable par l'URL de ton ALB, par exemple obtenue depuis Terraform
+      ALB_URL: "http://github-runner-lb-1969519618.eu-west-3.elb.amazonaws.com"
+    steps:
+      - name: Test ALB connectivity
+        run: |
+          echo "Testing ALB at $ALB_URL"
+          RESPONSE=$(curl -s $ALB_URL)
+          echo "Response: $RESPONSE"
+          # On vérifie ici si la réponse contient le texte attendu (à adapter)
+          if [[ "$RESPONSE" != *"GitHub Actions Runner Load Balancer"* ]]; then
+            echo "Test échoué: réponse inattendue"
+            exit 1
+          fi
