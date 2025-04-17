@@ -1,6 +1,5 @@
 cat << 'EOF' > .github/workflows/gestionlocation.yml
 name: SonarCloud – GestionLocation
-
 on:
   push:
     branches: [ deploiement ]
