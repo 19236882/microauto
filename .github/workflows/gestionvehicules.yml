@@ -1,10 +1,10 @@
-cat << 'EOF' > .github/workflows/gestionvehicules.yml
 name: SonarCloud – GestionVehicules
 on:
   push:
-    branches: [ depoloiement ]
+    branches: [ deploiement ]
   pull_request:
     types: [opened, synchronize, reopened]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -39,4 +39,3 @@ jobs:
             -Dsonar.projectKey=gestionvehicules \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
-EOF
