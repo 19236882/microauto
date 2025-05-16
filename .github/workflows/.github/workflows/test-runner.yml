@@ -1,0 +1,15 @@
+name: Test Self-Hosted Runner
+
+on:
+  workflow_dispatch:  # Permet de lancer manuellement le workflow
+
+jobs:
+  test-on-ec2-runner:
+    runs-on: [self-hosted, linux]
+    steps:
+      - name: Afficher l'environnement
+        run: |
+          echo "Hostname : $(hostname)"
+          uname -a
+          cat /etc/os-release
+          echo "Runner OK"
