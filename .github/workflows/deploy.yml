@@ -1,0 +1,26 @@
+name: Deploy to AWS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}         # clé de mon utilisateur IAM avec droits AssumeRole
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # secret de mon utilisateur IAM
+        aws-region: eu-west-3
+        role-to-assume: arn:aws:iam::961341551644:role/my-eks-cluster-cluster-20250516130442750600000006
+        role-session-name: github-actions-session
+
+    - name: Run AWS CLI command example
+      run: aws sts get-caller-identity
