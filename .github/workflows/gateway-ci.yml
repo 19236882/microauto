@@ -52,3 +52,11 @@ jobs:
         run: |
           docker build -t $ECR_REGISTRY/$IMAGE_NAME:latest gateway/
           docker push $ECR_REGISTRY/$IMAGE_NAME:latest
+
+      - name: Configure kubectl
+        run: |
+          aws eks --region $AWS_REGION update-kubeconfig --name my-eks-cluster
+
+      - name: Deploy Gateway to Kubernetes
+        run: kubectl apply -f k8s/gateway.yaml
+
