@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  gateway:
+    image: gateway-image
+    container_name: gatewayservice
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    networks:
+      - microauto-network
+
+  client:
+    image: client-image
+    container_name: clientservice
+    ports:
+      - "8081:8081"
+    restart: unless-stopped
+    networks:
+      - microauto-network
+
+  location:
+    image: location-image
+    container_name: locationservice
+    ports:
+      - "8082:8082"
+    restart: unless-stopped
+    networks:
+      - microauto-network
+
+  vehicule:
+    image: vehicule-image
+    container_name: vehiculeservice
+    ports:
+      - "8083:8083"
+    restart: unless-stopped
+    networks:
+      - microauto-network
+
+networks:
+  microauto-network:
+    driver: bridge
