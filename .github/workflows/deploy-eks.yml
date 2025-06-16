@@ -1,40 +1,50 @@
-name: CI/CD Pipeline
+name: Deploy to EKS
 
 on:
   push:
     branches:
-      - deploiement   # déclenche sur la branche deploiement
+      - deploiement  # ta branche de déploiement
+
+env:
+  AWS_REGION: eu-west-3
+  EKS_CLUSTER_NAME: my-eks-cluster
+  ECR_REGISTRY: 961341551644.dkr.ecr.eu-west-3.amazonaws.com
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Setup Java 17
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '17'
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ env.AWS_REGION }}
 
-      - name: Build Maven project (skip tests)
-        run: mvn clean install -DskipTests
+    - name: Update kubeconfig for EKS cluster
+      run: |
+        aws eks update-kubeconfig --region $AWS_REGION --name $EKS_CLUSTER_NAME
 
-      - name: Setup kubectl
-        uses: azure/setup-kubectl@v3
-        with:
-          version: 'latest'
+    - name: Deploy Gateway
+      run: |
+        kubectl set image deployment/gateway-app gateway-app=$ECR_REGISTRY/gateway-image:latest --record
+        kubectl rollout status deployment/gateway-app
 
-      - name: Configure kubeconfig
-        run: |
-          echo "${{ secrets.KUBE_CONFIG_DATA }}" | base64 -d > $HOME/.kube/config
-          chmod 600 $HOME/.kube/config
+    - name: Deploy Location
+      run: |
+        kubectl set image deployment/location-app location-app=$ECR_REGISTRY/location-image:latest --record
+        kubectl rollout status deployment/location-app
 
-      - name: Deploy to Kubernetes
-        run: |
-          kubectl apply -f deployment.yaml
-          kubectl apply -f client-image.yaml
-          kubectl apply -f location-image.yaml
-          kubectl apply -f vehicule-image.yaml
+    - name: Deploy Vehicules
+      run: |
+        kubectl set image deployment/vehicule-app vehicule-app=$ECR_REGISTRY/vehicule-image:latest --record
+        kubectl rollout status deployment/vehicule-app
+
+    - name: Deploy Client
+      run: |
+        kubectl set image deployment/client-app client-app=$ECR_REGISTRY/client-image:latest --record
+        kubectl rollout status deployment/client-app
