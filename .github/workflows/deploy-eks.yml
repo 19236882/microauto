@@ -3,7 +3,7 @@ name: Deploy to EKS
 on:
   push:
     branches:
-      - deploiement  # ta branche de déploiement
+      - deploiement  # ma branche de déploiement
 
 env:
   AWS_REGION: eu-west-3
